@@ -1,0 +1,11 @@
+export enum BUTTON_COLORS {
+  ERROR = "ERROR",
+  PRIMARY = "PRIMARY",
+  SECONDARY = "SECONDARY",
+  SUCCESS = "SUCCESS",
+}
+
+export enum BUTTON_SIZES {
+  LARGE,
+  SMALL,
+}

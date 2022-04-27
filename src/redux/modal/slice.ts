@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-import { IModalInfo, TModalType } from "../modalTypes";
+import { IModalInfo, TModalType } from "modules/Modal/modalTypes";
 
 interface IStateType {
   modalInfo: object;

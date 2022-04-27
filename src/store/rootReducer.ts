@@ -1,4 +1,4 @@
-import modalReducer from "modules/Modal/redux/modalSlice";
+import { modalReducer } from "redux/modal";
 
 const rootReducer = {
   modal: modalReducer,

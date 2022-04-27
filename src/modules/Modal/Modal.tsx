@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { MODALS_MAPPING } from "./modalTypes";
-import { modalActionTypes } from "./redux/modalSlice";
-import { modalTypeSelector } from "./redux/selectors";
+import { modalActionTypes, modalTypeSelector } from "redux/modal";
 import { ModalWrapper } from "./styles";
 
 const Modal = () => {

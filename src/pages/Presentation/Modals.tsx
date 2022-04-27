@@ -1,6 +1,6 @@
 import { Button } from "components";
 import { MODAL_TYPES } from "modules/Modal/modalTypes";
-import { modalActionTypes } from "modules/Modal/redux/modalSlice";
+import { modalActionTypes } from "redux/modal";
 import { useDispatch } from "react-redux";
 
 const Modals = () => {

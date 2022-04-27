@@ -1,13 +1,26 @@
-// import AccountDetailsModal from "modules/Auth/ChangePasswordModal/components/ChangePasswordModal";
+import { ExampleModal } from "modules";
 
 interface ModalTypesProps {
-  ACCOUNT_DETAILS_MODAL: string;
+  EXAMPLE_MODAL: string;
 }
 
 export const MODAL_TYPES: ModalTypesProps = {
-  ACCOUNT_DETAILS_MODAL: "ACCOUNT_DETAILS_MODAL",
+  EXAMPLE_MODAL: "EXAMPLE_MODAL",
 };
 
 export const MODALS_MAPPING = {
-  // [MODAL_TYPES.ACCOUNT_DETAILS_MODAL]: AccountDetailsModal,
+  [MODAL_TYPES.EXAMPLE_MODAL]: ExampleModal,
 };
+
+export type TModalType = string;
+
+export interface IModalInfo {
+  [key: string]: any;
+}
+
+export interface IModalSelectorData {
+  modalInfo: {
+    [key: string]: IModalInfo;
+  };
+  modalTypeArray: TModalType[];
+}

@@ -3,16 +3,24 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { GlobalStyles } from "styles";
-
 import "assets/fonts/Roboto/index.css";
+import configureAppStore from "store";
+import { Provider } from "react-redux";
+import { Modal } from "modules";
+
+const store = configureAppStore();
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    <GlobalStyles />
-    <App />
+    <Provider store={store}>
+      <GlobalStyles />
+      <Modal />
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 

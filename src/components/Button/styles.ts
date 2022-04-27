@@ -9,10 +9,11 @@ interface IProps {
 }
 
 export const ButtonStyled = styled.button<IProps>`
-  width: ${({ $size }: IProps) =>
+  min-width: ${({ $size }: IProps) =>
     $size === BUTTON_SIZES.SMALL ? "96px" : "122px"};
   height: ${({ $size }: IProps) =>
     $size === BUTTON_SIZES.SMALL ? "32px" : "40px"};
+  padding: 0 12px;
   border: 1px solid;
   border-radius: 5px;
   border-color: ${({ variant }: IProps) => colors[variant]};

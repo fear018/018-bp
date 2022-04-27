@@ -49,7 +49,7 @@ const colors: IColors = {
   ACCENT_VARIANT_LIGHT: "#F2F6F7",
   DARK: "#0D192E",
   DARK_LIGHT: "#303E57",
-  DARK_LIGHTER: "#565E6D",
+  DARK_LIGHTER: "rgba(170, 170, 170, 0.34)",
   DARK_OPACITY: "rgba(2, 35, 56, 0.65)",
   WHITE: "#ffffff",
 };

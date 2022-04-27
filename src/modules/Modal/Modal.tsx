@@ -1,4 +1,3 @@
-import { MouseEvent } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { MODALS_MAPPING } from "./modalTypes";
 import { modalActionTypes } from "./redux/modalSlice";

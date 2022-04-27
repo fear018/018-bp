@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { Provider } from "react-redux";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { GlobalStyles } from "styles";
 import "assets/fonts/Roboto/index.css";
 import configureAppStore from "store";
-import { Provider } from "react-redux";
 import { Modal } from "modules";
+
+import "requests/interceptors";
 
 const store = configureAppStore();
 
